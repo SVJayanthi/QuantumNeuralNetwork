@@ -1,7 +1,6 @@
 # QuantumNeuralNetwork
 
-![Predicted Energy(kJ/mol) vs EMT Energy (kJ/mol)](images/scatter.png)
-
+<div style="text-align:center"><img src="images/scatter.png" /></div>
 Predicted Energy(kJ/mol) vs EMT Energy (kJ/mol)
 
 ## Author
@@ -18,3 +17,21 @@ test.py- script to test the model
 training_data.traj- data used to train the model
 validation_data.traj- data used to test the model
 calc.amp- the outputted model
+
+
+### Code
+Sample code of updating speed of a car facing traffic.
+
+            velocityCurrentArray[i] = Math.min((velocityCurrentArray[i]), (minDist-1));
+            double prop = Math.random();
+            if (prop >= pCrit) {
+                velocityCurrentArray[i] = Math.max(0, (velocityCurrentArray[i]-1));
+            }
+            positionArray[i] = positionArray[i] + velocityCurrentArray[i];
+            if (positionArray[i] > MSpaces) {
+                positionArray[i] = positionArray[i] - MSpaces;
+            }
+
+
+## License
+[GNU](LICENSE)
