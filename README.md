@@ -1,6 +1,7 @@
 # QuantumNeuralNetwork
 
 ![](images/scatter.png)
+
 This folder contains the two scripts, the forcefield, the training data, the testing data, and the outputted validation plots
 for the neural network model.
 neural.py- script to train the model
