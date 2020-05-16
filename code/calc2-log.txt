@@ -1,0 +1,205 @@
+
+   oo      o       o   oooooo
+  o  o     oo     oo   o     o
+ o    o    o o   o o   o     o
+o      o   o  o o  o   o     o
+oooooooo   o   o   o   oooooo
+o      o   o       o   o
+o      o   o       o   o
+o      o   o       o   o
+
+Amp: Atomistic Machine-learning Package
+Developed by Andrew Peterson, Alireza Khorshidi, and others,
+Brown University.
+PI Website: http://brown.edu/go/catalyst
+Official repository: http://bitbucket.org/andrewpeterson/amp
+Official documentation: http://amp.readthedocs.org/
+Citation:
+  Alireza Khorshidi & Andrew A. Peterson,
+  Computer Physics Communications 207: 310-324 (2016).
+  http://doi.org/10.1016/j.cpc.2016.05.010
+======================================================================
+User: sravanj
+Hostname: DESKTOP-NS16LJT
+Date: 2020-04-13T00:16:06 (2020-04-13T04:16:06 UTC)
+Architecture: x86_64
+PID: 7020
+Amp version: 0.6
+Amp directory: /usr/lib/python3/dist-packages/amp
+ Last commit: b'unknown hash'
+ Last commit date: b'unknown date'
+Python: v3.6.9: /usr/bin/python3
+ASE v3.19.1: /home/sravanj/.local/lib/python3.6/site-packages/ase
+NumPy v1.18.2: /home/sravanj/.local/lib/python3.6/site-packages/numpy
+SciPy v1.4.1: /home/sravanj/.local/lib/python3.6/site-packages/scipy
+ZMQ/PyZMQ v4.3.2/v19.0.0: /home/sravanj/.local/lib/python3.6/site-packages/zmq
+pxssh: Not available from pxssh.
+pxssh (via pexpect v4.8.0): /home/sravanj/.local/lib/python3.6/site-packages/pexpect/pxssh.py
+======================================================================
+No queuing system detected; single machine assumed.
+Parallel configuration determined from environment for <single machine>:
+  localhost: 12
+
+Amp training started. 2020-04-13T00:16:06
+
+Descriptor: Gaussian
+  (<amp.descriptor.gaussian.Gaussian object at 0x7f47bb4f2438>)
+Model: NeuralNetwork
+  (<amp.model.neuralnetwork.NeuralNetwork object at 0x7f47bb4f2470>)
+Hashing images...
+ 975 unique images after hashing.
+...hashing completed. 0.0 min.
+
+Descriptor
+==========
+Cutoff function: <Cosine cutoff with Rc=6.500 from amp.descriptor.cutoffs>
+Finding unique set of elements in training data.
+2 unique elements included: H, O
+No symmetry functions supplied; creating defaults.
+Number of symmetry functions for each element:
+  H: 20
+  O: 20
+H feature vector functions:
+ 0: G2, H, eta = 0.05
+ 1: G2, O, eta = 0.05
+ 2: G2, H, eta = 4.0
+ 3: G2, O, eta = 4.0
+ 4: G2, H, eta = 20.0
+ 5: G2, O, eta = 20.0
+ 6: G2, H, eta = 80.0
+ 7: G2, O, eta = 80.0
+ 8: G4, (H, H), eta=0.005, gamma=1.0, zeta=1.0
+ 9: G4, (H, O), eta=0.005, gamma=1.0, zeta=1.0
+ 10: G4, (O, O), eta=0.005, gamma=1.0, zeta=1.0
+ 11: G4, (H, H), eta=0.005, gamma=-1.0, zeta=1.0
+ 12: G4, (H, O), eta=0.005, gamma=-1.0, zeta=1.0
+ 13: G4, (O, O), eta=0.005, gamma=-1.0, zeta=1.0
+ 14: G4, (H, H), eta=0.005, gamma=1.0, zeta=4.0
+ 15: G4, (H, O), eta=0.005, gamma=1.0, zeta=4.0
+ 16: G4, (O, O), eta=0.005, gamma=1.0, zeta=4.0
+ 17: G4, (H, H), eta=0.005, gamma=-1.0, zeta=4.0
+ 18: G4, (H, O), eta=0.005, gamma=-1.0, zeta=4.0
+ 19: G4, (O, O), eta=0.005, gamma=-1.0, zeta=4.0
+O feature vector functions:
+ 0: G2, H, eta = 0.05
+ 1: G2, O, eta = 0.05
+ 2: G2, H, eta = 4.0
+ 3: G2, O, eta = 4.0
+ 4: G2, H, eta = 20.0
+ 5: G2, O, eta = 20.0
+ 6: G2, H, eta = 80.0
+ 7: G2, O, eta = 80.0
+ 8: G4, (H, H), eta=0.005, gamma=1.0, zeta=1.0
+ 9: G4, (H, O), eta=0.005, gamma=1.0, zeta=1.0
+ 10: G4, (O, O), eta=0.005, gamma=1.0, zeta=1.0
+ 11: G4, (H, H), eta=0.005, gamma=-1.0, zeta=1.0
+ 12: G4, (H, O), eta=0.005, gamma=-1.0, zeta=1.0
+ 13: G4, (O, O), eta=0.005, gamma=-1.0, zeta=1.0
+ 14: G4, (H, H), eta=0.005, gamma=1.0, zeta=4.0
+ 15: G4, (H, O), eta=0.005, gamma=1.0, zeta=4.0
+ 16: G4, (O, O), eta=0.005, gamma=1.0, zeta=4.0
+ 17: G4, (H, H), eta=0.005, gamma=-1.0, zeta=4.0
+ 18: G4, (H, O), eta=0.005, gamma=-1.0, zeta=4.0
+ 19: G4, (O, O), eta=0.005, gamma=-1.0, zeta=4.0
+Calculating neighborlists...
+ Data stored in file calc2-neighborlists.
+ File exists with 0 total images, 0 of which are needed.
+ 975 new calculations needed.
+ Parallel processing.
+ Established server at DESKTOP-NS16LJT:53112.
+ Establishing worker sessions.
+ Starting local connections.
+  Session 0 (localhost): b'Log and error written to /tmp/tmp9sn1ibd0.stderr'
+  Session 1 (localhost): b'Log and error written to /tmp/tmp7mfehiuy.stderr'
+  Session 2 (localhost): b'Log and error written to /tmp/tmpuj37iuq9.stderr'
+  Session 3 (localhost): b'Log and error written to /tmp/tmp9w3niotq.stderr'
+  Session 4 (localhost): b'Log and error written to /tmp/tmp582e16gn.stderr'
+  Session 5 (localhost): b'Log and error written to /tmp/tmpg5_9dz8v.stderr'
+  Session 6 (localhost): b'Log and error written to /tmp/tmpmt45lwy0.stderr'
+  Session 7 (localhost): b'Log and error written to /tmp/tmp7ean6f87.stderr'
+  Session 8 (localhost): b'Log and error written to /tmp/tmpf9z9gbqd.stderr'
+  Session 9 (localhost): b'Log and error written to /tmp/tmp6vk0otqk.stderr'
+  Session 10 (localhost): b'Log and error written to /tmp/tmpb7_w2hiy.stderr'
+  Session 11 (localhost): b'Log and error written to /tmp/tmptie3ygl5.stderr'
+ Parallel calculations starting...
+  Process 2 returned 82 results.
+  Process 3 returned 81 results.
+  Process 0 returned 82 results.
+  Process 1 returned 82 results.
+  Process 8 returned 81 results.
+  Process 5 returned 81 results.
+  Process 7 returned 81 results.
+  Process 4 returned 81 results.
+  Process 9 returned 81 results.
+  Process 11 returned 81 results.
+  Process 10 returned 81 results.
+  Process 6 returned 81 results.
+  975 new results.
+ ...parallel calculations finished. 0.0 min.
+ Adding new results to database.
+...neighborlists calculated. 0.1 min.
+Fingerprinting images...
+ Data stored in file calc2-fingerprints.
+ File exists with 0 total images, 0 of which are needed.
+ 975 new calculations needed.
+ Parallel processing.
+ Established server at DESKTOP-NS16LJT:53127.
+ Establishing worker sessions.
+ Starting local connections.
+  Session 0 (localhost): b'Log and error written to /tmp/tmpcjksf82v.stderr'
+  Session 1 (localhost): b'Log and error written to /tmp/tmpcu3k6c3g.stderr'
+  Session 2 (localhost): b'Log and error written to /tmp/tmpvjdiesco.stderr'
+  Session 3 (localhost): b'Log and error written to /tmp/tmp6oop4ugf.stderr'
+  Session 4 (localhost): b'Log and error written to /tmp/tmpgu5en41v.stderr'
+  Session 5 (localhost): b'Log and error written to /tmp/tmpt7ym4cd0.stderr'
+  Session 6 (localhost): b'Log and error written to /tmp/tmppi19p8gc.stderr'
+  Session 7 (localhost): b'Log and error written to /tmp/tmpwfc8an8i.stderr'
+  Session 8 (localhost): b'Log and error written to /tmp/tmpw__24c2i.stderr'
+  Session 9 (localhost): b'Log and error written to /tmp/tmpqium_gxy.stderr'
+  Session 10 (localhost): b'Log and error written to /tmp/tmpcyrjrdm1.stderr'
+  Session 11 (localhost): b'Log and error written to /tmp/tmpofsmm2da.stderr'
+ Parallel calculations starting...
+  Process 0 returned 82 results.
+  Process 1 returned 82 results.
+  Process 2 returned 82 results.
+  Process 3 returned 81 results.
+  Process 5 returned 81 results.
+  Process 6 returned 81 results.
+  Process 4 returned 81 results.
+  Process 7 returned 81 results.
+  Process 8 returned 81 results.
+  Process 9 returned 81 results.
+  Process 10 returned 81 results.
+  Process 11 returned 81 results.
+  975 new results.
+ ...parallel calculations finished. 0.0 min.
+ Adding new results to database.
+...fingerprints calculated. 0.1 min.
+
+Model fitting
+=============
+Regression in atom-centered mode.
+Calculating new fingerprint range; this range is part of the model.
+Hidden-layer structure:
+  O: (5, 5)
+  H: (5, 5)
+Initializing with random weights.
+Initializing with random scalings.
+Starting parameter optimization.
+ Optimizer: <function fmin_bfgs at 0x7f47a848a488>
+ Optimizer kwargs: {'gtol': 1e-15}
+Saving checkpoint data.
+ Parallel processing.
+ Established server at DESKTOP-NS16LJT:53140.
+ Establishing worker sessions.
+ Starting local connections.
+  Session 0 (localhost): b'Log and stderr written to /tmp/tmp2pk8jxry.stderr'
+  Session 1 (localhost): b'Log and stderr written to /tmp/tmpn_ov0wkz.stderr'
+  Session 2 (localhost): b'Log and stderr written to /tmp/tmp6bcy8ow3.stderr'
+  Session 3 (localhost): b'Log and stderr written to /tmp/tmpnbiwsk45.stderr'
+  Session 4 (localhost): b'Log and stderr written to /tmp/tmp2uhz0pwm.stderr'
+  Session 5 (localhost): b'Log and stderr written to /tmp/tmp3s3ydsgb.stderr'
+  Session 6 (localhost): b'Log and stderr written to /tmp/tmpeur9pmc6.stderr'
+  Session 7 (localhost): b'Log and stderr written to /tmp/tmpl_wfav2f.stderr'
+  Session 8 (localhost): b'Log and stderr written to /tmp/tmpuvsnb0jh.stderr'
+  Session 9 (localhost): b'Log and stderr written to /tmp/tmpioivfkic.stderr'
