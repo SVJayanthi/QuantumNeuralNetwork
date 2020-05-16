@@ -1,7 +1,7 @@
 # QuantumNeuralNetwork
 
-<div style="text-align:center"><img src="images/scatter.png" />
-            <p>Predicted Energy(kJ/mol) vs EMT Energy (kJ/mol)</p></div>
+<div class="graph" style="text-align:center"><img src="images/scatter.png" />
+            <p><i>Predicted Energy(kJ/mol) vs EMT Energy (kJ/mol)</i></p></div>
 
 ## Author
 Sravan Jayanthi
