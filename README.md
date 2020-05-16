@@ -1,7 +1,7 @@
 # QuantumNeuralNetwork
 
 ![Predicted Energy(kJ/mol) vs EMT Energy (kJ/mol)](images/scatter.png)
-[^Footnote]
+Predicted Energy(kJ/mol) vs EMT Energy (kJ/mol)
 
 
 This folder contains the two scripts, the forcefield, the training data, the testing data, and the outputted validation plots
