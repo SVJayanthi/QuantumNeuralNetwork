@@ -26,15 +26,10 @@ for the neural network model.
 ### Code
 Sample code of updating speed of a car facing traffic.
 
-            velocityCurrentArray[i] = Math.min((velocityCurrentArray[i]), (minDist-1));
-            double prop = Math.random();
-            if (prop >= pCrit) {
-                velocityCurrentArray[i] = Math.max(0, (velocityCurrentArray[i]-1));
-            }
-            positionArray[i] = positionArray[i] + velocityCurrentArray[i];
-            if (positionArray[i] > MSpaces) {
-                positionArray[i] = positionArray[i] - MSpaces;
-            }
+            calc = Amp(descriptor=Gaussian(), model=NeuralNetwork(), label='calc')
+            calc.model.lossfunction.parameters['convergence'].update(
+                {'energy_rmse': 0.05,})
+            calc.train(images='training_data.traj')
 
 
 ## License
