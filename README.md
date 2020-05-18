@@ -12,15 +12,15 @@ The purpose of developing a neural network forcefield model is to represent the 
 ## Description
 This folder contains the two scripts, the forcefield, the training data, the testing data, and the outputted validation plots for the neural network model. The main libraries used are the AMP (Atomistic Machine-learning Package) and ASE (Atomic Simulation Environment).
 
-*neural.py- script to train the model
+*neural.py- script to train the model*
 
-test.py- script to test the model 
+*test.py- script to test the model*
 
-training_data.traj- data used to train the model
+*training_data.traj- data used to train the model*
 
-validation_data.traj- data used to test the model
+*validation_data.traj- data used to test the model*
 
-calc.amp- the outputted model*
+*calc.amp- the outputted model*
 
 
 ### Code
