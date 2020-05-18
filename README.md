@@ -5,12 +5,12 @@
 ## Author
 Sravan Jayanthi
 
-## Density Functional Theory
-The famous Nagel-Schreckenberg model, known for its use of Original Monte Carlo to model random driver behavior in traffic, was recreated using Java to gain a greater understanding of the application of Monte Carlo theory. The simulation was setup with a random variable that would influence the motion of driver behavior. Eventually, the distribution of cars deviates from the starting conditions due to the influence of the random variable. The motion of the cars are governed by four rules: each car seeks to increase speed, their speed cannot exceed the speed limit, they must slow down if there is a car ahead, and the probability p of the car slowing down. In each time step, the cars operate on these rules and are repeated until the simulation is complete. The final rule, the reduction of speed randomly, is where driver behavior will be simulated in causing potential traffic jams.
+## Machine Learning with Density Functional Theory
+The purpose of developing a neural network forcefield model is to represent the potential energy surface of molecular interactions. It has notable performance and memory benefits as opposed to performing Density Functional Thoery simulations with the drawbacks of requiring a large training set and potential for error in predicting reaction energies. The model takes atomic images that describe the energy configuration and atomic coordinates of entities involved in the reaction as input. The model uses two descriptors, radial and angular Guassian functions. The output is ultimately the predicted reaction energy and forces experienced by the atoms.
+
 
 ## Description
-This folder contains the two scripts, the forcefield, the training data, the testing data, and the outputted validation plots
-for the neural network model.
+This folder contains the two scripts, the forcefield, the training data, the testing data, and the outputted validation plots for the neural network model. The main libraries used are the AMP (Atomistic Machine-learning Package) and AST (Atomic Simulation Environment).
 
 *neural.py- script to train the model
 
@@ -24,7 +24,7 @@ for the neural network model.
 
 
 ### Code
-Sample code of updating speed of a car facing traffic.
+Sample code of setting up and training the neural net model.
 
             calc = Amp(descriptor=Gaussian(), model=NeuralNetwork(), label='calc')
             calc.model.lossfunction.parameters['convergence'].update(
